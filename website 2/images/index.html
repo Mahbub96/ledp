@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Template</title>
+    <style>
+        *{margin: 0;    padding: 0;}
+        .full_wrapper{width: 100%; background-color: #343B43;}
+        .main_wrapper{
+            width: 100%;
+            margin: 0 auto;
+            background-color:transparent;
+            padding: 10px 0px;
+            max-width: 600px;
+        }
+
+        .headertop{
+            background-color: #252A30;
+            padding: 10px 20px;
+        }
+        .topheader{
+            padding-top: 0;
+        }
+        .topheadleft{
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            color:#717478;
+        }
+        .topheadleft span a{
+            color: #95999E;
+        }
+        .topheadleft span{
+            font-weight: bold;
+        }
+
+        .headertop .topheadright{
+            height: 15px;
+        }
+        .headertop .topheadright .heading{
+            float: right;
+           
+        }
+        .headertop .topheadright .heading li{
+            padding-right: 30px;
+            float: left;
+            font-size: 10px;
+            color: #95999E;
+        }
+        .headertop .topheadright .heading li:last-child{
+            padding-right: 0;
+        }
+
+        .mainheader{
+            background-color: transparent;
+            height: 50px;
+        }
+        .mainheader .headleft{
+            color: #F6F6F6;
+            font-family:Arial, Helvetica, sans-serif;
+            float: left;
+            font-size: 20px;
+            font-weight: lighter;
+            
+        }
+        .mainheader .headright{
+            float: right;
+            color: #ACAFB2;
+            font-size: 15px;
+            padding-top:10px;
+        }
+        .slider{
+            background-color: #1FB6AF;
+            padding:35px;
+            height: 235px;
+        }
+        .slider .contenttopleft{
+            width:300px;
+            float: left;
+        }
+        .slider .contenttopleft h2{
+            color: #FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+        .slider .contenttopleft p{
+            color: #fff;
+            padding: 1.5em 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .slider .contenttopleft button{
+            padding: 15px;
+            color: #E26352;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+        }
+        .slider .contenttopright{
+            float: right;
+        }
+        .slider .contenttopright img{
+            height: 230px;
+            width: 220px;
+        }
+        .content{
+            width: 600px;
+            overflow: hidden;
+        }
+        .content .main_content{
+            width: 380px;
+            padding-right: 20px;
+            float: left;
+        }
+
+        .content .main_content .header{
+            background-color: #E26352;
+            height: 50px;
+        }
+
+        .content .main_content .header h2{
+            padding: 16px 10px;
+            color: #fff;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+
+        }
+
+        .content .main_content .single_cont{
+            background-color: #E6E6E6;
+            padding: 20px;
+            border-bottom: 2px solid #C1C1C1;
+            
+        }
+        .content .main_content .single_cont .logo{
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .content .main_content .single_cont .logo img{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+
+        }
+        .content .main_content .single_cont .cont{
+            width: 200px;
+            overflow: hidden;
+        }
+        .content .main_content .single_cont .cont h2{
+            width: 220px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #343B43;
+            padding: 15px 0px;
+        }
+        .content .main_content .single_cont .cont p{
+            width: 220px;
+            color: #1FB6AF;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 5px;
+        }
+        
+        .content .main_content .single_cont .cont ul{
+            list-style-type: disc;
+            padding-left: 14px;
+            margin-left:5px;
+            color: #E26352;
+        }
+
+        .single_cont .cont ul li a{
+            color: #E26352;
+            font-size:15px;
+        }
+        .aside{
+            width: 200px;
+            float: right;
+
+        }
+        .sidebar .aside .top .header{
+            background-color: #E26352;
+            height: 50px;
+
+        }
+
+        .sidebar .aside .top .header h2{
+            padding: 16px 10px;
+            color: #fff;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+        }
+        .sidebar .aside .side_body ul li{
+            height:30px;
+            width: 200px;
+            background-color: #E6E6E6;
+            border-bottom: 2px solid #BEBEBE;
+            padding: 15px 20px;
+            list-style: none;
+        }
+        .sidebar .aside .side_body ul li a{
+            text-decoration: none;
+            color: #E26352;
+        }
+
+        .sidebar .aside .bottom{
+            width: 200px;
+            margin-top: 20px;
+        }
+        
+        .sidebar .aside .bottom .left{
+            width: 94px;
+            float: left;
+            margin-right: 10px;
+            padding-top:2px;
+        }
+        .sidebar .aside .bottom .right{
+            width: 94px;
+            float: right;
+
+        }
+        .sidebar .aside .bottom img{
+            width: 94px;
+            height: 95px;
+        }
+
+        .footer_top{
+            max-width: 600px;
+            width: 100%;
+            height: 400px;
+            background-color:#343B43
+        }
+
+        .footer_top .head{
+            background-color: #E26352;
+            height: 50px;
+        }
+        .footer_top .head h2{
+            padding: 16px 10px;
+            color: #fff;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+        }
+        .footer_top .body{
+            width: 600px;
+            height: 400px;
+            float: left;
+        }
+        .footer_top .body .imgroom{
+            width: 49%;
+            height: 160px;
+            float: left;
+        }
+        .footer_top .body .left_top img,
+        .footer_top .body .right_bottom img
+        {
+            width: 145px;
+            height: 160px;
+        }
+        .footer_top .body .right_top img,
+        .footer_top .body .left_bottom img
+        {
+            width:300px;
+            height: 160px;
+        }
+        .full_footer{
+            background-color: #4E616D;
+        }
+        .footer{
+            height: 120px;
+
+        }
+        .footer .left{
+            float: left;
+        }
+        .footer .left h2{
+            color: #222222;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 30px;
+            padding-bottom: 5px;
+            
+        }
+        .footer .left h2 span{
+            color: #343B43;
+        }
+        .footer .left p{
+            color: #8A969E;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+    .footer .right{
+        float: right;
+        width: 300px;
+    }
+    .footer .right p{
+        font-size: 12px;
+        color: #828F97;
+        direction: rtl;
+
+    }
+    .footer .right p a{
+        color: #A2ADB4;
+    }
+    </style>
+</head>
+<body>
+    <!--first part-->
+    <div class="full_wrapper">
+        <div class="main_wrapper topheader">
+            <div class="headertop">
+                <div class="topheadleft">
+                    <p>Having Trouble viewing this email? <span><a href="#">View it in your browser</a></span></p>
+                </div>
+                <div class="topheadright">
+                    <ul class="heading">
+                        <li><a href="#"></a>Online Version</li>
+                        <li><a href="#"></a>Forward to a Friend</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+    <!--2nd part-->
+    <div class="full_wrapper">
+        <div class="main_wrapper">
+            <div class="mainheader">
+                <div class="headleft">
+                    <h2>
+                        Flat<span>Mail</span>
+                    </h2>
+                </div>
+                <div class="headright">
+                    <p>
+                        May 2013
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!--3rd part-->
+    <div class="full_wrapper">
+        <div class="main_wrapper">
+            <div class="slider">
+                <div class="contenttopleft">
+                    <h2>
+                        Email Template in Flat Style
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsum impedit sapiente laborum aliquam
+                    </p>
+                    <button id="btn">View More</button>
+                </div>
+    
+    
+                <div class="contenttopright"><img src="img/settings.png" alt="" srcset=""></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--4th part-->
+    <div class="full_wrapper">
+        <div class="main_wrapper">
+            <div class="content">
+                
+                <div class="main_content">
+                    <div class="header">
+                        <h2>This Week</h2>
+                    </div>
+
+                    <div class="single_cont">
+                        <div class="logo">
+                            <img src="img/server.png" alt="">
+                        </div>
+                        <div class="cont">
+                            <h2>Cloud Storage Discounts</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, provident repudiandae architecto ea quia quam dolorum illo quaerat
+                            </p>
+                            <ul>
+                                <li><a href="#">View More</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="single_cont">
+                        <div class="logo">
+                            <img src="img/file.png" alt="">
+                        </div>
+                        <div class="cont">
+                            <h2>Filesystem Permissions</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, provident repudiandae architecto ea quia quam dolorum illo quaerat
+                            </p>
+                            <ul>
+                                <li><a href="#">View More</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="single_cont">
+                        <div class="logo">
+                            <img src="img/file.png" alt="">
+                        </div>
+                        <div class="cont">
+                            <h2>No Limits</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, provident repudiandae architecto ea quia quam dolorum illo quaerat
+                            </p>
+                            <ul>
+                                <li><a href="#">View More</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="sidebar">
+                    <div class="aside">
+                        <div class="top">
+                            <div class="header">
+                                <h2>Sidebar List</h2>
+                            </div>
+                            <div class="side_body">
+                                <ul class="side_list">
+                                    <li><a href="#">Quisque sagisttis sapien</a></li>
+                                    <li><a href="#">Quisque sagisttis sapien</a></li>
+                                    <li><a href="#">Quisque sagisttis sapien</a></li>
+                                    <li><a href="#">Quisque sagisttis sapien</a></li>
+                                    <li><a href="#">Quisque sagisttis sapien</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="bottom">
+                            <div class="left">
+                                <img src="img/fb.png" alt="" srcset=""/>
+                            </div>
+
+                            <div class="right"><img src="img/twitter.png" alt=""/>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--footer top-->
+    <div class="full_wrapper">
+        <div class="main_wrapper">
+            <div class="footer_top">
+                <div class="head">
+                    <h2>
+                        Latest Projects
+                    </h2>
+                </div>
+
+                <div class="body">
+                    <div class="left_top imgroom">
+                        <img src="img/book.png" alt="">
+                        <img src="img/zikzac.png" alt="">
+                    </div>
+                    <div class="right_top imgroom">
+                        <img src="img/spri.png" alt="">
+                    </div>
+
+                    <div class="left_bottom imgroom">
+                        <img src="img/man.png" alt="">
+                    </div>
+                    <div class="right_bottom imgroom">
+                        <img src="img/name.png" alt="">
+                        <img src="img/cartoon.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>  
+
+
+    <!--footer-->
+    <div class="full_wrapper full_footer">
+        <div class="main_wrapper">
+            <div class="footer">
+                <footer>
+                    <div class="left">
+                        <h2>
+                            Flat<span>Mail</span>
+                        </h2>
+                        <p>Copyright &copy; 2013 Company Name</p>
+                    </div>
+
+
+                    <div class="right">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae consequuntur nam quos vero  <span><a href="#">Unsubscribe</a></span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        <!--NumberOfPart--
+        <div class="full_wrapper">
+            <div class="main_wrapper">
+                
+            </div>
+        </div>  
+
+
+
+    -->
+</body>
+</html>
