@@ -15,7 +15,6 @@
 .wraper{
     margin: 0 auto;
     width: 960px;
-    
 }
 
 header{
@@ -116,12 +115,12 @@ header .logo span{
 }
 
 
-.section{
+.sectionx{
     background-color: #ffffff;
 }
 
 
-.section .wraper .section1{
+.sectionx .wraper .section1{
     width: 30%;
     padding-top: 30px;
     float: left;
@@ -129,18 +128,18 @@ header .logo span{
     margin-left: 10px;
     padding: 10px;
 }
-.section .wraper .section1 img{
+.sectionx .wraper .section1 img{
     height: 100px;
     width: 100px;
     padding:30px;
 
 }
-.section .wraper .section1 h2{
+.sectionx .wraper .section1 h2{
     font-size: 22px;
     color: #2d3950;
 }
 
-.section .wraper .section1 p{
+.sectionx .wraper .section1 p{
     font-size: 15px;
     color: #999999;
     padding-bottom: 50px;
