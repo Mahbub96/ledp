@@ -313,22 +313,25 @@ article .article_top{
     margin-top: 15px;
 }
 
-.footer_bottom{
-    background-color: #fff;
+.wraper .footer_down{
+    width: 95%;
 }
 
-
-.footer_bottom .footer_left{
-    padding-top: 2px;
-}
-.footer_bottom .footer_right{
+.wraper .footer_down .footer_left{
     display: inline-block;
+    margin: 30px 10px;
+}
+.wraper .footer_down .footer_left p{
+    display: inline;
+    color: #999;
 }
 
-.footer_bottom .footer_right .social_icon{
-    padding: 20px 4px ;
+
+.wraper .footer_down .footer_right{
+    display:inline;
+    float: right;
+    margin: 20px 10px;
 }
-.footer_bottom .footer_right .social_icon img{
-    height: 30px;
-    width: 30px;
+.wraper .footer_down .footer_right .social_icon{
+    display:inline;
 }

@@ -72,9 +72,18 @@
         background-color: #f6f9f9;
         padding-bottom: 0px;
     }
-    .footer_bottom .footer_left {
-        padding-top: 2px;
-        display: inline-block;
+    .wraper .footer_down .footer_left{
+        display: block;
+        margin: 10px;
+        text-align: center;
+    }
+    .wraper .footer_down .footer_left p{
+        padding: 0px;
+    }
+    .wraper .footer_down .footer_right{
+        display: block;
+        float: none;
+        text-align: center;
     }
 }
 
