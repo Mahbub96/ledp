@@ -22,8 +22,8 @@
         padding: 30px;
     }
     .wraper > img {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     .section_top .wraper section {
         padding-top: 45px;
@@ -63,10 +63,10 @@
         width: 90%;
     }
     .wraper .form textarea {
-       width: 90%;
+       width: 86%;
     }
     .wraper .form button {
-        margin-right: -16%;
+        margin-right: -9%;
     }
     .article_wrapper {
         background-color: #f6f9f9;
@@ -108,8 +108,8 @@
         padding: 30px;
     }
     .wraper > img{
-        padding-top: 100px;
-        padding-bottom: 50px;
+        margin-top: 100px;
+        margin-bottom: 50px;
     }
     
     .wraper section p{
@@ -139,7 +139,7 @@
         width: 90%;
     }
     .wraper .form textarea {
-       width: 90%;
+       width: 88%;
     }
     .wraper .form button {
         margin-right: -20%;
@@ -174,8 +174,8 @@
          padding: 30px;
      }
      .wraper > img{
-         padding-top: 100px;
-         padding-bottom: 70px;
+         margin-top: 100px;
+         margin-bottom: 70px;
      }
 
 
@@ -198,6 +198,7 @@
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+    
     
  }
 

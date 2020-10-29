@@ -89,8 +89,9 @@ header .logo span{
 
 }
 .wraper > img{
-    padding-top: 160px;
-    padding-bottom: 90px;
+    margin-top: 160px;
+    margin-bottom: 90px;
+    cursor: pointer;
 }
 .section_top{
     background-color: #f6f9f9;
@@ -125,7 +126,6 @@ header .logo span{
     padding-top: 30px;
     float: left;
     text-align: center;
-    margin-left: 10px;
     padding: 10px;
 }
 .sectionx .wraper .section1 img{
@@ -276,7 +276,7 @@ article .article_top{
 
 .wraper .form textarea{
     height: 120px;
-    width: 500px;
+    width: 490px;
     resize: none;
     display: block;
     background-color: transparent;
@@ -311,6 +311,7 @@ article .article_top{
     margin-right: -49%;
     display: inline-block;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .wraper .footer_down{
@@ -334,4 +335,5 @@ article .article_top{
 }
 .wraper .footer_down .footer_right .social_icon{
     display:inline;
+    cursor: pointer;
 }
