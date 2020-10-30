@@ -1,0 +1,197 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 0px) and (max-width: 575.98px) { 
+    .container{
+        width: 99%;
+    }
+    #header .logo_left {
+        padding: 20px;
+    }
+    #header nav {
+        display: none;
+        width: 100%;
+    }
+    
+    #header nav.show{
+        display: block;
+    }
+    #header nav .menu li {
+        float: none;
+        border-right: 1px solid #1e1e1e;
+        text-align: center;
+    }
+    .content .left_section {
+        width: 100%;
+    }
+    .content .left_section .single_post_wrapper {
+        padding-top: 40px;
+    }
+    .content .left_section .single_post_wrapper img {
+        width: 100%;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .content .sidebar aside {
+        width: 100%;
+        padding-top: 50px;
+        float: none;
+    }
+    .content .sidebar .search_box {
+        width: 100%;
+        
+    }
+    .content .sidebar .mailbox {
+        float: none;
+    }
+    .content .sidebar #email {
+        width: 100%;
+        
+    }
+    .downbtn {
+        width: 99.5%;
+    }
+
+
+    .footer {
+        padding: 4%;
+    }
+    
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .container{
+        width: 99%;
+    }
+    #header .logo_left {
+        padding: 20px;
+    }
+    #header nav {
+        display: none;
+        width: 50%;
+        
+    }
+    #header nav.show{
+        display: block;
+        margin-top: 40px;
+    }
+    #header nav .menu li {
+        float: none;
+        border-right: 1px solid #1e1e1e;
+        text-align: center;
+    }
+    
+    .content .left_section {
+        width: 100%;
+    }
+    .content .left_section .single_post_wrapper {
+        padding-top: 40px;
+    }
+    .content .left_section .single_post_wrapper img {
+        width: 100%;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .content .sidebar aside {
+        width: 100%;
+        padding-top: 50px;
+        float: none;
+    }
+    .content .sidebar .search_box {
+        width: 100%;
+        
+    }
+    .content .sidebar .mailbox {
+        float: none;
+    }
+    .content .sidebar #email {
+        width: 100%;
+        
+    }
+    .downbtn {
+        width: 99.5%;
+    }
+
+
+    .footer {
+        padding: 4%;
+    }
+    
+}
+
+            /* TAB */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .container{
+        width: 90%;
+    }
+    #header .logo_left {
+        padding: 20px;
+    }
+    #header nav {
+        display: none;
+        transition: 5s;
+        width: 50%;
+        margin-top: 40px;
+    }
+    #header nav.show{
+        display: block;
+    }
+    #header nav .menu {
+        list-style: none;
+        width: 100%;
+    }
+    #header nav .menu li {
+        border-right: 1px solid #1e1e1e;
+        text-align: center;
+        float: none;
+    }
+    .content .left_section {
+        
+        width: 100%;
+    }
+    .content .left_section .single_post_wrapper img {
+        width: 100%;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .content .sidebar aside {
+        width: 100%;
+        float: none;
+    }
+    .content .sidebar .search_box {
+        width: 100%;
+        
+    }
+    .content .sidebar .mailbox {
+        float: none;
+    }
+    .content .sidebar #email {
+        width: 100%;
+        
+    }
+    .downbtn {
+        width: 170%;
+        
+    }
+    .downbtn {
+        width: 99.8%;
+    }
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+    .btn-container{
+        display: none;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .btn-container{
+        display: none;
+    }
+ }
